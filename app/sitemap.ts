@@ -1,0 +1,1 @@
+import type {MetadataRoute} from "next";import{products}from"./data";export default function sitemap():MetadataRoute.Sitemap{const base="https://semecoagency.com";return["","/about","/contact","/privacy-policy","/terms",...products.map(p=>`/${p.slug}`)].map((path,i)=>({url:`${base}${path}`,lastModified:new Date(),changeFrequency:i===0?"weekly":"monthly",priority:i===0?1:.7}))}
