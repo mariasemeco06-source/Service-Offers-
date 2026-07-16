@@ -1,0 +1,1 @@
+import Link from"next/link";export default function NotFound(){return <section className="thank"><div><span>404</span><h1>Page not found · Página no encontrada</h1><p>The page may have moved. · Es posible que la página se haya movido.</p><Link className="button primary" href="/">Return home · Volver al inicio</Link></div></section>}
