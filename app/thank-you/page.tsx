@@ -1,1 +1,0 @@
-import Link from "next/link";export default function ThankYou(){return <section className="thank"><div><span>✓</span><h1>Thank you.</h1><p>Your message has been received. A member of Semeco Agency LLC will follow up.</p><Link href="/" className="button primary">Return home</Link></div></section>}
