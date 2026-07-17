@@ -1,3 +1,10 @@
 import type {NextConfig} from "next";
-const nextConfig:NextConfig={poweredByHeader:false,compress:true,images:{unoptimized:true}};
+const nextConfig:NextConfig={
+  poweredByHeader:false,
+  compress:true,
+  images:{
+    formats:["image/avif","image/webp"],
+    qualities:[75,85],
+  },
+};
 export default nextConfig;
